@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta name="viewport" http-equiv="content-type" content="text/html; charset=utf-8; width=device-width; initial-scale=1" />
+    <title>Fontes em CSS</title>
+    <style>
+      body {
+        font-family: Arial, Tahoma, sans-Serif;
+        /*
+        Medidas Absolutas: preferivel usar px
+        cm, mm, in (polegadas), px, pt, pc
+        
+        Medidas Relativas: preferivel usar em
+        em (altura M), ex (altura x), rem (root em), vw (viewport width), vh (vireport height), %
+        geralmente as fontes tem tamanho de 16px que equivale a 1em
+        */
+        font-size: 16px; 
+      }
+      h1 {
+        /*shorthand font
+        
+        font-style: italic; // normal italic
+        font-weight: normal; // lighter light normal bold bolder (100 - 900)
+        font-size: 16px;
+        font-family: Arial, Tahoma, sans-Serif;
+        
+        font: font-style -> font-weight -> font-size -> font-family (separado por espaço)
+        */
+        font: italic bolder 3em 'Work Sans', sans-Serif;
+      }
+      h2 {
+        font: bold 2em 'Work Sans', sans-Serif;
+      }
+      p {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit tellus mattis turpis convallis, ac ultrices eros venenatis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit tellus mattis turpis convallis, ac ultrices eros venenatis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit tellus mattis turpis convallis, ac ultrices eros venenatis.</p>
+    <h2>SubTítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus suscipit tellus mattis turpis convallis, ac ultrices eros venenatis.</p>
+  </body>
+</html>

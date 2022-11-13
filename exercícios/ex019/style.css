@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+  em HTML é id em CSS é #
+  pode informar o seletor e o id
+  h1#principal
+  Ou apenas o id, mas não pode repetir o id na mesma página
+  #principal
+  em HTML é class em CSS é . (ponto)
+  class deve ser usado quando for usar em vários seletores
+*/
+body {
+  background-color: #0f8;
+  font-family: Arial, Helvetica, Sans-Serif;
+  margin: 40px;
+}
+h1 {
+  color: #010;
+}
+h1#principal {
+  text-align: center;
+  background-color: #072;
+  color: #fff;
+}
+h2 {
+  color: #052;
+}
+
+.basico {
+  color: #00ff31;
+  background-color: #216a20;
+}
+
+.intermediario {
+  color: #fffd00;
+  background-color: #a4a700;
+}
+.avancado {
+  color: #ff0000;
+  background-color: #690000;
+}
