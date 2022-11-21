@@ -48,7 +48,6 @@ main > div {
 
 .comFundo#fundoFlor {
     position: relative;
-    height: 94vh;
     background-color: black;
     background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background001.jpg);
     background-size: 100% 100%;
@@ -58,14 +57,10 @@ main > div {
     background-image: url(https://professorguanabara.github.io/projeto-cordel/imagens/background002.jpg);
 }
 .comFundo {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    
-
     background-size: cover;
     background-position: center center;
     color: white;
+    background-attachment: fixed;
 }
 .comFundo > div {
     width: 45%;
