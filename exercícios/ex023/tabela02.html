@@ -12,17 +12,32 @@
             border-collapse: collapse;
         }
 
+        tbody > tr:nth-child(2n-1) {/* numeral */
+            background-color: gray;
+        }
+        tbody > tr:nth-child(even) {/*odd imppares e pares*/
+            background-color: lightgray;
+        }
+
         td,
         th {
             border: 1px solid black;
             padding: 5px;
         }
         th {
-            background-color: lightgray;
+            background-color: gray;
+            color: white;
         }
 
         td.num {
             text-align: right;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
         }
     </style>
 </head>
@@ -32,6 +47,7 @@
     <!-- 
         Anatomia da tabela grandes
         TABLE:
+        CAPTION:
             THEAD:
                 TR, TD, TH
             TBODY:
@@ -41,9 +57,10 @@
             
      -->
     <table>
+        <caption>Dados populacional por estado</caption>
         <thead>
-            <th>Unidade Federativa</th>
-            <th>População (2021)</th>
+            <th scope="col">Unidade Federativa</th>
+            <th scope="col" style="width: 100px;">População (2021)</th>
         </thead>
         <tbody>
             <tr>
