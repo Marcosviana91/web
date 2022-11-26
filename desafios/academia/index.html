@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Academia Corpus Dancy</title>
+    <link rel="icon" type="imagem/jpeg"
+        href="https://d15mvavv27jnvy.cloudfront.net//06f3e1d129f1bb43433eb36e88d2375a.jpg">
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        body {
+            max-width: 500px;
+            margin: auto;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.508);
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+
+            background-color: gray;
+        }
+
+        header div {
+            height: 200px;
+            background-color: gray;
+            background-image: url("https://scontent.fcwb2-3.fna.fbcdn.net/v/t39.30808-6/300449768_544463441015988_1227007414214022040_n.png?_nc_cat=100&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeFHzYuq7KIrvLRORpzx3WIn-uvgAj31nED66-ACPfWcQM-FXb7U_kc8bE6yvjC_RTDnhfUyZB8VH89irfLvuXRD&_nc_ohc=inRV-0W-SYYAX915m0H&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfBCyDNTVG32oMJCBUsiPeqA0f0OWHrL2YRPW0cElbjFgA&oe=638544B3");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            border-radius: 10px;
+        }
+
+        main {
+            background-color: lightgray;
+            padding: 5px
+        }
+
+        main section p {
+            text-align: justify;
+            text-indent: 0.5in;
+        }
+
+        .imagens { /*Container*/
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine;
+            
+            display: flex; /* Indica que o conteúdo será organizado pelo flexbox. precedem de ordem*/
+            flex-direction: column; /* Indica o eixo que o conteúdo será disposto */
+            justify-content: space-between; /* Alinhamento dos ITENS NO EIXO principal definido em flex-direction */
+            align-items: center; /* Alinhamento do eixo perpendicular em relação ao container */ 
+            
+            flex-wrap: wrap; /* Habilita a quebra de alinhamento do conteúdo em relação ao container, criando novos eixos paralelos (linhas ou colunas) */
+            flex-flow: column wrap; /* flex-direction + flex-wrap juntos */
+            align-content: flex-end; /* DEPENDE DE FLEX-WRAP HABILITADO: Alinhamento/Espaçamento dos eixos adicionais (linhas ou colunas) */
+            <!-- row-gap: 40px; /* espaçamento manual */ -->
+            <!-- column-gap: 40px; -->
+        }
+
+        .card { /*Conteúdo*/
+            padding: 5px;
+        }
+
+        img {
+            max-height: 10vh;
+            border-radius: 10px;
+        }
+
+        footer {
+            background-color: gray;
+            padding: 5px;
+        }
+
+        footer p {
+            padding: 5px;
+        }
+
+        footer iframe {
+            display: block;
+            margin: auto;
+        }
+
+        #autor {
+            position: absolute;
+            left: 0;
+            width: 100vw;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Academia Corpus Dancy
+        </h1>
+        <p>
+            Você na sua melhor fase! 🏋🏻‍♂️
+        </p>
+        <div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Aulas</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, aliquam, quibusdam, dicta voluptatibus
+                quos eos suscipit commodi eaque placeat impedit vero! Eveniet corrupti impedit error commodi molestiae
+                voluptates eaque ratione.
+            </p>
+            <div class="imagens">
+                <div class="card">
+                    <img src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/142713690_2789545211263566_7668685458257159990_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeEC3GP0Cg9pRL_p-hZ7sJjC1lK1rB8v1fHWUrWsHy_V8YQU9mWBgYIuWSHSkCgEKbTX_NPGxW9b3mWj6gbyRuFU&_nc_ohc=nT-5r6EinfYAX_DChFy&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfC6OXKkO_dqJXObaSimlYpOaJQjp-4P-xq-JgLLKx6yKQ&oe=63A8D5CE"
+                    alt="Treinamento funcional kids, quarta às 18:15. Turma de 5 a 9 anos.">
+                </div>
+                <div class="card">
+                    <img src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/142448916_2789469817937772_8338882082354943414_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeFoGxp1PiWD7wUQsJ76xcuU4cjaxlyaVx_hyNrGXJpXHwg612lOy5fWRNuz7nXn9U-oc7d3eCYDlNuDl9NxQL1X&_nc_ohc=eH0pxa_1rGgAX-JvJoX&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfARFOGzoVGcJB_XfvhXji3Ok6mv6zDC6KYLSt45Ibm7IA&oe=63A8E10F"
+                    alt="Treinamento funcional juvenil, segunda e quarta às 19:30. Turma de 9 a 13 anos.">
+                </div>
+                <div class="card">
+                    <img
+                        src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/121375021_2705726816312073_3074927263976423721_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF7AU5Fjq-1YZpLJ2sbUztEbys9x3S7hTFvKz3HdLuFMWObNwDtXeh-yNtldcjI5Jfogb791yyEoYLMjK7LXXqV&_nc_ohc=de7qOYEk2LoAX9SJSiL&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfAU4M8uD0WEl37lhiULTUioNCgqLra0r_zJMwk1Qih5fA&oe=63A8AD2D"
+                        alt="Treinamento funcional, terça e quinta às 19hrs">
+                </div>
+                <div class="card">
+                    <img
+                        src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/121375021_2705726816312073_3074927263976423721_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF7AU5Fjq-1YZpLJ2sbUztEbys9x3S7hTFvKz3HdLuFMWObNwDtXeh-yNtldcjI5Jfogb791yyEoYLMjK7LXXqV&_nc_ohc=de7qOYEk2LoAX9SJSiL&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfAU4M8uD0WEl37lhiULTUioNCgqLra0r_zJMwk1Qih5fA&oe=63A8AD2D"
+                        alt="Treinamento funcional, terça e quinta às 19hrs">
+                </div>
+                <div class="card">
+                    <img
+                        src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/121375021_2705726816312073_3074927263976423721_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF7AU5Fjq-1YZpLJ2sbUztEbys9x3S7hTFvKz3HdLuFMWObNwDtXeh-yNtldcjI5Jfogb791yyEoYLMjK7LXXqV&_nc_ohc=de7qOYEk2LoAX9SJSiL&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfAU4M8uD0WEl37lhiULTUioNCgqLra0r_zJMwk1Qih5fA&oe=63A8AD2D"
+                        alt="Treinamento funcional, terça e quinta às 19hrs">
+                </div>
+                <div class="card">
+                    <img
+                        src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/121375021_2705726816312073_3074927263976423721_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF7AU5Fjq-1YZpLJ2sbUztEbys9x3S7hTFvKz3HdLuFMWObNwDtXeh-yNtldcjI5Jfogb791yyEoYLMjK7LXXqV&_nc_ohc=de7qOYEk2LoAX9SJSiL&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfAU4M8uD0WEl37lhiULTUioNCgqLra0r_zJMwk1Qih5fA&oe=63A8AD2D"
+                        alt="Treinamento funcional, terça e quinta às 19hrs">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <p>
+                <a href="https://www.instagram.com/_corpusdancy/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/24/174/174855.png" alt="Instagram">
+                    @_corpusdancy
+                </a>
+            </p>
+            <p>
+                <a href="https://www.facebook.com/academiacorpusdancy/">
+                    <img src="https://cdn-icons-png.flaticon.com/24/174/174848.png" alt="Facebok">
+                    @academiacorpusdancy
+                </a>
+
+            </p>
+        </section>
+        <p>
+            <strong>📞Fone:</strong> (41) 3367-8955 <br>
+        </p>
+        <p>
+            <strong>Whatsapp:</strong> (41) 99963-5888 <br>
+        </p>
+        <p>
+            <a href="https://api.whatsapp.com/send?phone=554133678955" target="_blank">Fale com a gente.</a>
+        </p>
+        <p>
+            <strong>Endereço:</strong>
+            <a href="https://www.google.com/maps/dir//academia+corpus+dancy/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x94dcef583a8846f5:0xc315e87ed3afcb7f?sa=X&amp;ved=2ahUKEwiFy4blitLpAhXrHrkGHUfjBFcQ9RcwGXoECBsQBA"
+                target="_blank">R. Rio Japurá, 1089. Bairro Alto Curitiba - PR, 82840-220
+            </a>
+        </p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.19058690492!2d-49.20327648581276!3d-25.398430237864673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcef583a8846f5%3A0xc315e87ed3afcb7f!2sAcademia%20Corpus%20Dancy!5e0!3m2!1spt-BR!2sbr!4v1669414810708!5m2!1spt-BR!2sbr"
+            width="450" height="275" style="border:outset;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p id="autor">
+            Site modelo elaborado por Marcos Viana.
+        </p>
+    </footer>
+</body>
+
+</html>
