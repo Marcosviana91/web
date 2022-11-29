@@ -74,6 +74,21 @@
         .card { /*Conteúdo*/
             padding: 5px;
         }
+        #card1 {
+            background-color: lightblue;
+            order: 1; /* peso da ordenação */
+            flex-grow: 1; /* proporção de crencimento */
+        }
+        #card2 {
+            background-color: lightcoral;
+            order: 1;
+            flex-grow: 3;
+        }
+        #card3 {
+            background-color: lightgreen;
+            order: 0;
+            flex-grow: 3;
+        }
 
         img {
             max-height: 10vh;
@@ -125,15 +140,15 @@
                 voluptates eaque ratione.
             </p>
             <div class="imagens">
-                <div class="card">
+                <div class="card" id="card1">
                     <img src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/142713690_2789545211263566_7668685458257159990_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeEC3GP0Cg9pRL_p-hZ7sJjC1lK1rB8v1fHWUrWsHy_V8YQU9mWBgYIuWSHSkCgEKbTX_NPGxW9b3mWj6gbyRuFU&_nc_ohc=nT-5r6EinfYAX_DChFy&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfC6OXKkO_dqJXObaSimlYpOaJQjp-4P-xq-JgLLKx6yKQ&oe=63A8D5CE"
                     alt="Treinamento funcional kids, quarta às 18:15. Turma de 5 a 9 anos.">
                 </div>
-                <div class="card">
+                <div class="card" id="card2">
                     <img src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/142448916_2789469817937772_8338882082354943414_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=a26aad&_nc_eui2=AeFoGxp1PiWD7wUQsJ76xcuU4cjaxlyaVx_hyNrGXJpXHwg612lOy5fWRNuz7nXn9U-oc7d3eCYDlNuDl9NxQL1X&_nc_ohc=eH0pxa_1rGgAX-JvJoX&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfARFOGzoVGcJB_XfvhXji3Ok6mv6zDC6KYLSt45Ibm7IA&oe=63A8E10F"
                     alt="Treinamento funcional juvenil, segunda e quarta às 19:30. Turma de 9 a 13 anos.">
                 </div>
-                <div class="card">
+                <div class="card" id="card3">
                     <img
                         src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/121375021_2705726816312073_3074927263976423721_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF7AU5Fjq-1YZpLJ2sbUztEbys9x3S7hTFvKz3HdLuFMWObNwDtXeh-yNtldcjI5Jfogb791yyEoYLMjK7LXXqV&_nc_ohc=de7qOYEk2LoAX9SJSiL&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfAU4M8uD0WEl37lhiULTUioNCgqLra0r_zJMwk1Qih5fA&oe=63A8AD2D"
                         alt="Treinamento funcional, terça e quinta às 19hrs">
