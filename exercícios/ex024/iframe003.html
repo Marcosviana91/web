@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do iframe</title>
+    <style>
+        p {
+            text-indent: 0.5in;
+        }
+        iframe {
+            width: 95vw;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis deserunt sint, nisi quibusdam possimus asperiores voluptas eius eligendi modi tempore magnam rerum dolorum fuga reprehenderit! Repellat, maxime! Dignissimos, sunt fugiat.</p>
+    <ul>
+        <!-- target da ancora pode ser um nome de iframe -->
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolorem minima, libero quasi nostrum magnam cupiditate error nihil aliquam harum iste recusandae beatae, excepturi reprehenderit laborum perferendis qui voluptatibus dicta.</p>
+    <!-- iframe com nome para ser usado como target -->
+    <iframe name="frame" srcdoc="<h1>Escolha uma das opções acima</h1><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam dolorem minima, libero quasi nostrum magnam cupiditate error nihil aliquam harum iste recusandae beatae, excepturi reprehenderit laborum perferendis qui voluptatibus dicta.</p>"></iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laborum eum reprehenderit soluta, debitis odio eveniet commodi, in sapiente blanditiis, quod ut maxime! Nihil repellendus aliquid in itaque? Iste, beatae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos temporibus ducimus officiis architecto et quod saepe ea repudiandae esse quo voluptas reiciendis, mollitia voluptatem vitae qui quos totam, sequi assumenda?</p>
+</body>
+</html>
