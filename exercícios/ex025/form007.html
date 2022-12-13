@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+</body>
+<form action="#" method="post">
+    <p>
+        <label for="idEst">Estado: </label>
+        <select name="estado" id="idEst">
+            <option value="" selected>--- Escolha ---</option>
+            <optgroup label="Norte">
+                <option value="AM">Amazonas</option>
+                <option value="AC">Acre</option>
+                <option value="AP">Amapá</option>
+            </optgroup>
+            <optgroup label="Sudeste">
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+            <optgroup label="Sul">
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+            </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="idProf">Profissão:</label>
+        <input type="text" name="prof" id="idProf" list="lstProf">
+        <datalist id="lstProf">
+            <option>Admnistralçao</option>
+            <option>Desenvolvedor</option>
+        </datalist>
+    </p>
+    <p>
+        <label for="idMsg">Mensagem: <br></label>
+        <!-- textarea deve usar metodo de envio POST -->
+        <textarea name="msg" id="idMsg" cols="30" rows="10" placeholder="DIgite sua mensagem aqui."></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+</form>
+
+</html>
