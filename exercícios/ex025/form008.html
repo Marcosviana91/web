@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário e Saida</title>
+</head>
+<body>
+    <h1>Um pouco de JavaScript</h1>
+    <form action="#" method="get">
+        <p>
+            <label for="num1">Número 1: </label>
+            <input type="number" name="numero1" id="num1" required oninput="isoma.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="num2">Número 2:</label>
+            <input type="number" name="numero2" id="num2" required oninput="isoma.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="isoma">Soma: </label>
+            <output id="isoma">0</output>
+        </p>
+        <p>
+            <input type="range" name="val" id="idval" value="5" min="0" max="10" oninput="outval.innerHTML = Number(idval.value)">
+            <output id="outval">5</output>
+        </p>
+        <p>
+            <label for="idano">Ano de nascimento:</label>
+            <input type="number" name="ano" id="idano" min="1950" max="2022" oninput="calcIdade()">
+            <br>
+            <label for="ididade">Sua idade é</label>
+            <output id="ididade"></output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function calcIdade() {
+            let anoAtual = new Date().getFullYear()
+            ididade.innerHTML = Number(anoAtual) - Number(idano.value)
+        }
+    </script>
+</body>
+</html>
