@@ -8,9 +8,13 @@
     <link rel="icon" type="imagem/jpeg"
         href="https://d15mvavv27jnvy.cloudfront.net//06f3e1d129f1bb43433eb36e88d2375a.jpg">
     <style>
+        @media screen and ("") {
+            
+        }
         * {
             padding: 0px;
             margin: 0px;
+            box-sizing: border-box;
         }
 
         a {
@@ -29,9 +33,9 @@
         }
 
         header {
+            height: 100px;
             text-align: center;
             padding: 20px;
-
             background-color: gray;
         }
 
@@ -58,17 +62,6 @@
             height: 400px;
             width: 400px;
             background-color: aquamarine;
-            
-            display: flex; /* Indica que o conteúdo será organizado pelo flexbox. precedem de ordem*/
-            flex-direction: column; /* Indica o eixo que o conteúdo será disposto */
-            justify-content: space-between; /* Alinhamento dos ITENS NO EIXO principal definido em flex-direction */
-            align-items: center; /* Alinhamento do eixo perpendicular em relação ao container */ 
-            
-            flex-wrap: wrap; /* Habilita a quebra de alinhamento do conteúdo em relação ao container, criando novos eixos paralelos (linhas ou colunas) */
-            flex-flow: column wrap; /* flex-direction + flex-wrap juntos */
-            align-content: flex-end; /* DEPENDE DE FLEX-WRAP HABILITADO: Alinhamento/Espaçamento dos eixos adicionais (linhas ou colunas) */
-            <!-- row-gap: 40px; /* espaçamento manual */ -->
-            <!-- column-gap: 40px; -->
         }
 
         .card { /*Conteúdo*/
@@ -76,18 +69,12 @@
         }
         #card1 {
             background-color: lightblue;
-            order: 1; /* peso da ordenação */
-            flex-grow: 1; /* proporção de crencimento */
         }
         #card2 {
             background-color: lightcoral;
-            order: 1;
-            flex-grow: 3;
         }
         #card3 {
             background-color: lightgreen;
-            order: 0;
-            flex-grow: 3;
         }
 
         img {
@@ -149,21 +136,6 @@
                     alt="Treinamento funcional juvenil, segunda e quarta às 19:30. Turma de 9 a 13 anos.">
                 </div>
                 <div class="card" id="card3">
-                    <img
-                        src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/121375021_2705726816312073_3074927263976423721_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF7AU5Fjq-1YZpLJ2sbUztEbys9x3S7hTFvKz3HdLuFMWObNwDtXeh-yNtldcjI5Jfogb791yyEoYLMjK7LXXqV&_nc_ohc=de7qOYEk2LoAX9SJSiL&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfAU4M8uD0WEl37lhiULTUioNCgqLra0r_zJMwk1Qih5fA&oe=63A8AD2D"
-                        alt="Treinamento funcional, terça e quinta às 19hrs">
-                </div>
-                <div class="card">
-                    <img
-                        src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/121375021_2705726816312073_3074927263976423721_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF7AU5Fjq-1YZpLJ2sbUztEbys9x3S7hTFvKz3HdLuFMWObNwDtXeh-yNtldcjI5Jfogb791yyEoYLMjK7LXXqV&_nc_ohc=de7qOYEk2LoAX9SJSiL&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfAU4M8uD0WEl37lhiULTUioNCgqLra0r_zJMwk1Qih5fA&oe=63A8AD2D"
-                        alt="Treinamento funcional, terça e quinta às 19hrs">
-                </div>
-                <div class="card">
-                    <img
-                        src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/121375021_2705726816312073_3074927263976423721_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF7AU5Fjq-1YZpLJ2sbUztEbys9x3S7hTFvKz3HdLuFMWObNwDtXeh-yNtldcjI5Jfogb791yyEoYLMjK7LXXqV&_nc_ohc=de7qOYEk2LoAX9SJSiL&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfAU4M8uD0WEl37lhiULTUioNCgqLra0r_zJMwk1Qih5fA&oe=63A8AD2D"
-                        alt="Treinamento funcional, terça e quinta às 19hrs">
-                </div>
-                <div class="card">
                     <img
                         src="https://scontent.fcwb2-3.fna.fbcdn.net/v/t1.6435-9/121375021_2705726816312073_3074927263976423721_n.png?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeF7AU5Fjq-1YZpLJ2sbUztEbys9x3S7hTFvKz3HdLuFMWObNwDtXeh-yNtldcjI5Jfogb791yyEoYLMjK7LXXqV&_nc_ohc=de7qOYEk2LoAX9SJSiL&_nc_ht=scontent.fcwb2-3.fna&oh=00_AfAU4M8uD0WEl37lhiULTUioNCgqLra0r_zJMwk1Qih5fA&oe=63A8AD2D"
                         alt="Treinamento funcional, terça e quinta às 19hrs">
