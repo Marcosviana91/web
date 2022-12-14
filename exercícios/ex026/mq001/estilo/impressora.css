@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* Estilo para impressora */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+menu {
+    display: none;
+}
+
+article::after {
+    content: '\nEste artigo foi impresso por mim';
+}
+
+article p {
+    text-indent: 0.5in;
+}
