@@ -46,6 +46,14 @@ fieldset div label {
     font-weight: 600;
 }
 
+form input {
+    background-color: rgb(36, 0, 71);
+}
+
+form input:focus {
+    background-color: rgb(204, 153, 254);
+}
+
 p#buttons {
     padding-top: 10px;
     display: grid;
