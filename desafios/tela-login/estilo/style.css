@@ -11,6 +11,7 @@
 
 div#conteudo {
     height: 100vh;
+    transition: background 1s;
     background: url(../imagens/back-phone.jpg) no-repeat;
     background-position: center center;
 
@@ -23,11 +24,12 @@ fieldset {
     margin: auto;
     border-radius: 10px;
     padding: 10px;
-    background: linear-gradient(.25turn, rgba(238, 130, 238, 0.299) 15%, rgba(255, 4, 176, 0.314) 65%, rgba(127, 3, 55, 0.336));
-
+    background: linear-gradient(.25turn, rgba(252, 168, 252, 0.4) 15%, rgba(238, 130, 238, 0.4) 65%, rgba(148, 0, 211, 0.4));
+    box-shadow: 0px 0px 5px black;
 }
 
 legend {
+    padding: 0 5px;
     text-align: center;
     font-weight: 900;
     background-color: white;
@@ -51,13 +53,42 @@ p#buttons {
     justify-content: space-evenly;
     gap: 10px;
 }
+p#buttons input {
+    background-color: rgba(137, 43, 226, 0.4);
+    border-radius: 5px;
+}
+
+p#buttons input:hover {
+    background-color: rgba(107, 0, 124, 0.8);
+    font-weight: 600;
+}
 
 @media screen and (min-width: 600px) {
     * {
         font-size: medium;
     }
+
     div#conteudo {
         background: url(../imagens/back-tablet.jpg) no-repeat;
         background-position: center center;
+    }
+    fieldset {
+        background: linear-gradient(.25turn, rgba(252, 168, 252, 0.8) 15%, rgba(238, 130, 238, 0.8) 65%, rgba(148, 0, 211, 0.8));
+    
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    * {
+        font-size: medium;
+    }
+
+    div#conteudo {
+        background: url(../imagens/back-pc.jpg) no-repeat;
+        background-position: center center;
+    }
+    fieldset {
+        background: linear-gradient(.25turn, rgba(142, 93, 142, 0.8) 15%, rgba(78, 34, 78, 0.8) 65%, rgba(56, 0, 80, 0.8));
+    
     }
 }
