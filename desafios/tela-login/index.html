@@ -21,7 +21,7 @@
                             <label for="idNome">Nome de usuário: </label>
                         </div>
                         <input type="text" name="Nome" id="idNome" placeholder="Nome de usuário" autocomplete="username"
-                            requiredm>
+                            required>
                     </div>
                     <div>
                         <div style="display: grid; grid-template-columns: 20% 80%;">
@@ -31,12 +31,12 @@
                         <input type="password" name="Senha" id="idSenha" placeholder="Digite sua senha" minlength="6"
                             autocomplete="current-password" required>
                     </div>
-                    <p id="buttons">
-                        <input class="material-icons" type="submit" value="done">
-                        <input class="material-icons" type="reset" value="lock_reset">
-                    </p>
-                    <a href="#" id="botao_reset_senha">Esqueci a senha</a>
-                </fieldset>
+                    <div id="buttons">
+                            <input class="material-icons" type="submit" value="done">
+                            <input class="material-icons" type="reset" value="lock_reset">
+                            <a href="#" id="botao_reset_senha">Esqueci a senha</a>
+                    </div>
+                    </fieldset>
             </form>
         </div>
     </main>

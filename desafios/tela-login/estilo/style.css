@@ -37,7 +37,7 @@ legend {
     border-radius: 5px;
 }
 
-fieldset div {
+fieldset > div {
     display: grid;
     padding: 10px;
 }
@@ -48,38 +48,43 @@ fieldset div label {
 
 form input {
     background-color: rgb(36, 0, 71);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 form input:focus {
     background-color: rgb(204, 153, 254);
 }
 
-p#buttons {
-    padding-top: 10px;
+div#buttons {
     display: grid;
+    padding-top: 10px;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: ". ."
+                         "btn_forget btn_forget";
     justify-content: space-evenly;
     gap: 10px;
 }
-p#buttons input {
+div#buttons input {
     background-color: rgba(137, 43, 226, 0.4);
     border-radius: 5px;
 }
 
-p#buttons input:hover {
+div#buttons input:hover {
     background-color: rgba(107, 0, 124, 0.8);
     font-weight: 600;
 }
 
 a#botao_reset_senha {
     border: 2px solid black;
+    border-radius: 5px;
     background-color: rgba(137, 43, 226, 0.4);
     text-decoration: none;
+    text-align: center;
     color: black;
     padding: 2px;
-    
-    border-radius: 5px;
-    text-align: center;
+    grid-area: btn_forget;
 }
 a#botao_reset_senha:hover {
     background-color: rgba(107, 0, 124, 0.8);
